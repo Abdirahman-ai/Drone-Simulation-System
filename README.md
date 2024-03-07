@@ -56,3 +56,7 @@ Now go to 3D Visualization page and select the view of the entities on top right
 You will be able to watch the simulation of the drone and the passenger here http://127.0.0.1:8081.
 
 On top right corner, you can change your camera view into locking the entities.
+
+### DOCKER 
+docker run -it --rm -p 8081:8081 abdinahmen/team-010-31-project:latest
+
