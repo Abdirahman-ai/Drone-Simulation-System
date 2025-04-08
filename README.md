@@ -34,8 +34,8 @@ make -j
 ```
 
 Then open your browser:
-- 🌐 `http://127.0.0.1:8081` → 3D visualization
-- 🌐 `http://127.0.0.1:8081/schedule.html` → Schedule trip page
+- 🌐 http://127.0.0.1:8081 → 3D visualization
+- 🌐 http://127.0.0.1:8081/schedule.html → Schedule trip page
 
 Or use Docker:
 ```bash
