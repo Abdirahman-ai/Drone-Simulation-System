@@ -1,64 +1,106 @@
 # Project - Drone Simulation System
 
-in this project, we were able to simulate the behavior of the drone and robots. You will be able to set the pickup location and the final destination of the robot, and afterward the drone will come and pick up the robot toward their destination. Not only the transportation simulation but you will be able to decide what to do with the robot's behavior when the passenger arrived at ther destination or if the drone is too late to pickup.
+In this project, we simulate the behavior of autonomous drones and delivery robots within a 3D environment. Users can schedule deliveries, observe drone navigation, rerouting to charging stations, and successful delivery of passengers/robots to final destinations.
 
-This directory contains the support code needed to visualize the drone simulation system.
+This directory contains all the support code needed to visualize the drone simulation system, including navigation algorithms, entity rendering, and the web interface.
 
-#### What is in this directory?
-<ul>
-  <li>  <code>README.md</code>
-  <li>  <code>.gitignore</code>
-  <li>  <code>app</code> folder, which contains:
-    <ul>
-      <li>  <code>graph_viewer</code> : producing graph visualization
-      <li>  <code>transit_service</code> : visualization
-    </ul>
-  <li>  <code>libs</code> folder, which contains:
-    <ul>
-      <li>  <code>routing</code> : finding the paths
-      <li>  <code>trainsit</code> : entities properties
-    </ul>
-  <li>  <code>dependencies</code>
-</ul>
+---
 
-## Video Presentation Link
-Coming soon....
-## Getting Started
+## 📁 What’s in this Directory?
 
-Here is a quick overview of how to run the visualization
+- `README.md`
+- `.gitignore`
+- `app/`
+  - `graph_viewer/` – Graph rendering for navigation
+  - `transit_service/` – Web-based 3D visualization
+- `libs/`
+  - `routing/` – Core pathfinding logic (A*, Dijkstra's, DFS)
+  - `transit/` – Entity behaviors, battery management, delivery system
+- `dependencies/` – External libraries and modules
 
-    ```bash
-    # Go to the project directory
-    cd /path/to/repo/project
-    
-    # Build the project
-    make -j
-    
-    # Run the project (./build/web-app <port> <web folder>)
-    ./build/bin/transit_service 8081 apps/transit_service/web/
-    ```
-    
-Navigate to http://127.0.0.1:8081 and you should see a visualization.
+---
 
-Navigate to http://127.0.0.1:8081/schedule.html and you should see a page to schedule the trips.
+## 🛠 Getting Started
 
-Below are instructions that detail how to build and run in several different environments.  
+```bash
+# Go to the project directory
+cd /path/to/repo/project
 
+# Build the project
+make -j
 
-# Simulation
+# Run the project (./build/web-app <port> <web folder>)
+./build/bin/transit_service 8081 apps/transit_service/web/
+```
 
-## Schedule
-You will be able to schedule the robots for a ride in this page http://127.0.0.1:8081/schedule.html. 
+Then open your browser:
+- 🌐 `http://127.0.0.1:8081` → 3D visualization
+- 🌐 `http://127.0.0.1:8081/schedule.html` → Schedule trip page
 
-Type passenger name, select start and end destination, and press `Schedule Trip` button to schedule a trip. 
-
-Now go to 3D Visualization page and select the view of the entities on top right corner.
-
-## 3D Visualization
-You will be able to watch the simulation of the drone and the passenger here http://127.0.0.1:8081.
-
-On top right corner, you can change your camera view into locking the entities.
-
-### DOCKER 
+Or use Docker:
+```bash
 docker run -it --rm -p 8081:8081 abdinahmen/team-010-31-project:latest
+```
 
+---
+
+## ✨ Simulation Features
+
+### 📍 1. Map View
+> ![Map View](gifs/map-view.gif)
+
+Shows the layout and environment where deliveries are scheduled and executed.
+
+### 📅 2. Schedule Page
+> ![Schedule Page](gifs/schedule-trip.gif)
+
+Users can input the passenger’s name, select pickup and drop-off points, and initiate trips.
+
+### 🚁 3. Drone Flying
+> ![Drone Flying](gifs/drone-flying.gif)
+
+Visualizes the autonomous drone navigating through the environment.
+
+### ⚡ 4. Drone Rerouting to Charging Station
+> ![Drone Charging](gifs/drone-charging.gif)
+
+Drones intelligently reroute to charging stations when battery thresholds are reached.
+
+### ✅ 5. Drone Delivery Complete
+> ![Delivery Done](gifs/drone-delivery-complete.gif)
+
+Drones successfully drop off passengers at their final destination.
+
+> 💡 Each view showcases different aspects of routing algorithms, design patterns, and drone AI behavior.
+
+---
+
+## 🎥 Video Presentation
+Coming soon...
+
+---
+
+## 👀 3D Visualization
+Visit `http://127.0.0.1:8081` to access the 3D drone simulation interface. 
+Use the top-right dropdown to change camera views and follow entities.
+
+To schedule new trips, visit `http://127.0.0.1:8081/schedule.html`.
+
+---
+
+## 🧱 Tech Stack & Architecture
+- **Languages**: C++, JavaScript, HTML, CSS
+- **Design Patterns**: Decorator, Factory
+- **Visualization**: WebGL 3D viewer
+- **Build Tools**: Make, Docker
+
+---
+
+## 🐳 Docker Quick Run
+```bash
+docker run -it --rm -p 8081:8081 abdinahmen/team-010-31-project:latest
+```
+
+---
+
+Want to contribute or test new navigation features? Open an issue or submit a PR! 🚀
