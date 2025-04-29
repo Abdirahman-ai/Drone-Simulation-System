@@ -62,7 +62,7 @@ Users can input the passenger’s name, select pickup and drop-off points, and i
 Visualizes the autonomous drone navigating through the environment.
 
 ### ⚡ 4. Drone Rerouting to Charging Station
-> ![Drone Charging](gifs/drone-charging.gif)
+> ![Drone Charging](droneCharging3.gif)
 
 Drones intelligently reroute to charging stations when battery thresholds are reached.
 
