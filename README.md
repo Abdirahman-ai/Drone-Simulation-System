@@ -57,7 +57,7 @@ Displays the environment where drone and robot deliveries are scheduled and exec
 Users can input the passenger’s name, select pickup and drop-off points, and initiate trips.
 
 ### 🚁 3. Drone Flying
-> ![Drone Flying](gifs/drone-flying.gif)
+> ![Drone Flying](droneFlying-ezgif.com-video-to-gif-converter.gif)
 
 Visualizes the autonomous drone navigating through the environment.
 
