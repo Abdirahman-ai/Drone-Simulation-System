@@ -52,7 +52,7 @@ docker run -it --rm -p 8081:8081 abdinahmen/team-010-31-project:latest
 Displays the environment where drone and robot deliveries are scheduled and executed.
 
 ### 📅 2. Schedule Page
-> ![Schedule Page](gifs/schedule-trip.gif)
+> ![Schedule Page](schedulePage.gif)
 
 Users can input the passenger’s name, select pickup and drop-off points, and initiate trips.
 
