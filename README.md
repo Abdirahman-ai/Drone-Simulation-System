@@ -47,9 +47,9 @@ docker run -it --rm -p 8081:8081 abdinahmen/team-010-31-project:latest
 ## ✨ Simulation Features
 
 ### 📍 1. Map View
-> ![Map View](gifs/map-view.gif)
-
-Shows the layout and environment where deliveries are scheduled and executed.
+> ![Map View](droneMap.gif)
+> 
+Displays the environment where drone and robot deliveries are scheduled and executed.
 
 ### 📅 2. Schedule Page
 > ![Schedule Page](gifs/schedule-trip.gif)
