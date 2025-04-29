@@ -67,7 +67,7 @@ Visualizes the autonomous drone navigating through the environment.
 Drones intelligently reroute to charging stations when battery thresholds are reached.
 
 ### ✅ 5. Drone Delivery Complete
-> ![Delivery Done](gifs/drone-delivery-complete.gif)
+> ![Delivery Done](droneCompletedDelivery.gif)
 
 Drones successfully drop off passengers at their final destination.
 
